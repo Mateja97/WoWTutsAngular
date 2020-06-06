@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: #003C40;
+  height: 100vh;
+  width: 150px;
+  position: fixed;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  color: white;
+  height:35px;
+  text-align: center;
+  margin-top: 15px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+  font-size:20px;
+  background-color: #003C60;
+
+}
+a:hover {
+  background-color: #00565B;
+}
+:host {
+  display: flex;
+}
+router-outlet {
+  margin-left: 215px;
+}

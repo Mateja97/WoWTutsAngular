@@ -1,0 +1,13 @@
+<app-remote (channelChanged) ="switchChannel($event)"></app-remote>
+<div [ngSwitch]=activeChannel >
+  <iframe *ngSwitchCase="1" class="tv-screen" src="https://www.youtube.com/embed/-gLlhmoz8i8" frameborder="0"></iframe>
+  <iframe *ngSwitchCase="2" class="tv-screen" src="https://www.youtube.com/embed/fYGExUSIbFY" frameborder="0"></iframe>
+  <iframe *ngSwitchCase="3" class="tv-screen" src="https://www.youtube.com/embed/KmXnEHGXMac" frameborder="0"></iframe>
+  <iframe *ngSwitchCase="4" class="tv-screen" src="https://youtube.com/embed/pugANus-a1M" frameborder="0"></iframe>
+  <iframe *ngSwitchCase="5" class="tv-screen" src="https://www.youtube.com/embed/jD4Ds6f_6wo" frameborder="0"></iframe>
+  <iframe *ngSwitchCase="6" class="tv-screen" src="https://youtube.com/embed/CRve_L8-RHA" frameborder="0"></iframe>
+  <iframe *ngSwitchCase="7" class="tv-screen" src="https://www.youtube.com/embed/7e1aF4DfSS8" frameborder="0"></iframe>
+  <iframe *ngSwitchCase="8" class="tv-screen" src="https://www.youtube.com/embed/d1svxUhBiq8" frameborder="0"></iframe>
+  <iframe *ngSwitchCase="9" class="tv-screen" src="https://www.youtube.com/embed/XI0nJFtrfV0" frameborder="0"></iframe>
+  <iframe *ngSwitchCase="10" class="tv-screen" src="https://www.youtube.com/embed/tgbNymZ7vqY?&autoplay=1" frameborder="0"></iframe>
+</div>

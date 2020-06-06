@@ -1,0 +1,8 @@
+<div>
+  <p style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+    <button *ngFor="let item of classes; let i = index" (click)=talentsFromClass(item) class="class-button">{{item}}</button>
+  </p>
+  <p *ngIf ="getclassSelected()">
+    <button *ngFor="let item of talSelected; let i = index" (click)=changeChannel(indexOfClass()*3+i+1) class="talents-button">{{item}}</button>
+  </p>
+</div>

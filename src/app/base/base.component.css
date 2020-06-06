@@ -1,0 +1,8 @@
+h1{
+  position: relative;
+  max-width: 640px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
