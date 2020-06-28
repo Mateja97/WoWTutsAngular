@@ -16,16 +16,16 @@ export class RemoteComponent implements OnInit {
 
   ngOnInit(): void {
     this.classSelected = false;
-    this.talents.set('Shaman', ['ele', 'resto', 'enha']);
-    this.talents.set('Mage', ['frost', 'arcane', 'fire']);
-    this.talents.set('Priest', ['disco', 'holy', 'shadow']);
-    this.talents.set('Death Knight', ['frost', 'blood', 'uh']);
-    this.talents.set('Rogue', ['sub', 'com', 'asa']);
-    this.talents.set('Warrior', ['fury', 'arms', 'prot']);
-    this.talents.set('Warlock', ['demo', 'aff', 'destro']);
-    this.talents.set('Paladin', ['ret', 'holy', 'prot']);
-    this.talents.set('Druid', ['feral', 'resto', 'bal']);
-    this.talents.set('Hunter', ['bm', 'mm', 'surv']);
+    this.talents.set('Shaman', ['Elemental', 'Restoration', 'Enhancement']);
+    this.talents.set('Mage', ['Frost', 'Arcane', 'Fire']);
+    this.talents.set('Priest', ['Discipline', 'Holy', 'Shadow']);
+    this.talents.set('Death Knight', ['Frost', 'Blood', 'Unholy']);
+    this.talents.set('Rogue', ['Subtlety', 'Combat', 'Assassination']);
+    this.talents.set('Warrior', ['Fury', 'Arms', 'Protection']);
+    this.talents.set('Warlock', ['Demonology', 'Affliction', 'Destruction']);
+    this.talents.set('Paladin', ['Retribution', 'Holy', 'Protection']);
+    this.talents.set('Druid', ['Feral', 'Restoration', 'Balance']);
+    this.talents.set('Hunter', ['Beast Mastery', 'Marksmanship', 'Survival']);
   }
   changeChannel(channel: number){
     this.channelChanged.emit(channel);
