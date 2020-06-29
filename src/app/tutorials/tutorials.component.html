@@ -1,6 +1,7 @@
 <app-remote (channelChanged) ="switchChannel($event)"></app-remote>
-<div [ngSwitch]=activeChannel >
-  <iframe *ngSwitchCase="1" class="tv-screen" src="https://www.youtube.com/embed/-gLlhmoz8i8" width = "854" height = "480" frameborder="0"></iframe>
+<div [ngSwitch]=activeChannel>
+    <iframe *ngIf= "activeChannel != 0" class="tv-screen" [src]= "videos[activeChannel-1] | safe" width = "854" height = "480" frameborder="0"></iframe>
+<!---<iframe *ngSwitchCase="1" class="tv-screen" [src]= "videos[activeChannel-1] | safe" width = "854" height = "480" frameborder="0"></iframe>
   <iframe *ngSwitchCase="2" class="tv-screen" src="https://www.youtube.com/embed/fYGExUSIbFY" width = "854" height = "480" frameborder="0"></iframe>
   <iframe *ngSwitchCase="3" class="tv-screen" src="https://www.youtube.com/embed/KmXnEHGXMac" width = "854" height = "480" frameborder="0"></iframe>
   <iframe *ngSwitchCase="4" class="tv-screen" src="https://youtube.com/embed/pugANus-a1M" width = "854" height = "480" frameborder="0"></iframe>
@@ -30,4 +31,5 @@
   <iframe *ngSwitchCase="28" class="tv-screen" src="https://www.youtube.com/embed/bxdKsMg1feg?list=TLPQMjgwNjIwMjAgxk6aVcEq9A" width = "854" height = "480" frameborder="0"></iframe>
   <iframe *ngSwitchCase="29" class="tv-screen" src="https://www.youtube.com/embed/xODHhBj_P_M" width = "854" height = "480" frameborder="0"></iframe>
   <iframe *ngSwitchCase="30" class="tv-screen" src="https://www.youtube.com/embed/8TksuZylUd0&autoplay=1" width = "854" height = "480" frameborder="0"></iframe>
+!--->
 </div>

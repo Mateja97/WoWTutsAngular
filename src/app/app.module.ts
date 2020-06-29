@@ -7,6 +7,8 @@ import { TabComponent } from './tab/tab.component';
 import { HomeComponent } from './home/home.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
 import { RemoteComponent } from './remote/remote.component';
+import { SafePipe } from './safe.pipe';
+import { HoverDirective } from './hover.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { RemoteComponent } from './remote/remote.component';
     TabComponent,
     HomeComponent,
     TutorialsComponent,
-    RemoteComponent
+    RemoteComponent,
+    SafePipe,
+    HoverDirective
   ],
   imports: [
     BrowserModule,

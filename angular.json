@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "StreamService"
+    }
+  },
+  "defaultProject": "StreamService",
+  "cli": {
+    "analytics": "4713836f-6de5-44d1-8ef8-f7728985fd62"
+  }
 }
